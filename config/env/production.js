@@ -21,7 +21,7 @@
 
 module.exports = {
 
-
+  environment: 'production',
   /**************************************************************************
   *                                                                         *
   * Tell Sails what database(s) it should use in production.                *

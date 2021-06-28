@@ -148,7 +148,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      allowOrigins: ['https://oebong.netlify.app']
+      allowOrigins: ['https://oebong.netlify.app', '*']
     },
 
   },

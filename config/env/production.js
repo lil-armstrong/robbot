@@ -20,44 +20,40 @@
  */
 
 module.exports = {
-  environment: 'production',
+  environment: "production",
   models: {
-    migrate: 'safe',
+    migrate: "safe",
   },
   blueprints: {
     shortcuts: false,
   },
   security: {
     cors: {
-      allowOrigins: ['https://oebong.netlify.app', 'http://localhost:3000']
+      allRoutes: true,
+      allowOrigins: "*",
+      allowCredentials: false,
     },
     // csrf: true
-
   },
   session: {
     cookie: {
       // secure: true,
-      maxAge: 24 * 60 * 60 * 1000,  // 24 hours
+      maxAge: 24 * 60 * 60 * 1000, // 24 hours
     },
-
   },
   sockets: {
-    onlyAllowOrigins: [
-      'https://oebong.netlfy.app',
-    ],
+    onlyAllowOrigins: ["https://oebong.netlfy.app"],
   },
 
   log: {
-    level: 'debug'
+    level: "debug",
   },
   http: {
     cache: 365.25 * 24 * 60 * 60 * 1000, // One year
     trustProxy: true,
-
   },
   custom: {
     // baseUrl: 'https://web-robbot.herokuapp.com',
     // internalEmailAddress: 'oebong1@gmail.com',
-
   },
 };

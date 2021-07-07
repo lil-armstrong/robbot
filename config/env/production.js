@@ -28,9 +28,9 @@ module.exports = {
     shortcuts: false,
   },
   security: {
-    // cors: {
-    //   allowOrigins: ['https://oebong.netlify.app', 'http://localhost']
-    // },
+    cors: {
+      allowOrigins: ['https://oebong.netlify.app', 'http://localhost:3000']
+    },
     // csrf: true
 
   },

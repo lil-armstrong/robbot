@@ -8,8 +8,8 @@
  * https://sailsjs.com/anatomy/config/routes-js
  */
 const path = require('path')
-const API_URI = '/api/v1/';
-function setAPIURI(method, pathname) {
+function setAPIURI(method, pathname, version=1) {
+  const API_URI = `/api/v${version}/`;
   return `${method} ${path.join(API_URI, pathname)}`
 }
 
@@ -24,7 +24,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  [setAPIURI('POST', 'screenshot')]: { action: 'screenshot' },
+  [setAPIURI('GET', 'screenshot')]: { action: 'screenshot' },
 
 
   /***************************************************************************

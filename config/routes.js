@@ -23,7 +23,7 @@ module.exports.routes = {
    *                                                                          *
    ***************************************************************************/
 
-  [setAPIURI("GET", "screenshot")]: { action: "screenshot", cors: false },
+  [setAPIURI("GET", "screenshot")]: { controller: 'PilferController', action: "screenshot", cors: false },
 
   /***************************************************************************
    *                                                                          *

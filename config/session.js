@@ -18,7 +18,7 @@ module.exports.session = {
   * of your users, forcing them to log in again.                             *
   *                                                                          *
   ***************************************************************************/
-  secret: '4ded7c56ac433881d6a389d7b7e1b243',
+  secret: 'c2ef6dd796dd3ccd77084752d514c2fa',
 
 
   /***************************************************************************
@@ -35,5 +35,5 @@ module.exports.session = {
   // isSessionDisabled: function (req){
   //   return !!req.path.match(req._sails.LOOKS_LIKE_ASSET_RX);
   // },
-    
+
 };

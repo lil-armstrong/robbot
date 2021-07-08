@@ -48,7 +48,7 @@ module.exports = {
 
 
           browser.close();
-          return res.json(screenshot);
+          return res.json({screenshot});
         })();
       } catch (error) {
         console.error(error);
